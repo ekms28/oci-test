@@ -31,7 +31,7 @@
 
 ## Step 3: Setup the Cloud Environment
 
-- **Create a VCN (Virtual Cloud Network):** Create subnets, route tables, and security lists.
+- **Create a VCN (Virtual Cloud Network):** Create subnets, route tables, security lists, NAT Gateway and DRG (if we do redundance communication to other region or VCN we will should use this service).
 - **Create the Database:** Create a database based on the possibilities found during the overview. Configure security lists to allow access from the application server to enable communication between servers (database and application).
 - **Setup an OKE cluster:** Define deployment and service configurations for the application pods.
 - **Load Balancer:** During the creation of the application on Kubernetes, you can create a Load Balancer using YAML code for better management or create a Load Balancer separately and manually configure the IP and Port on the backend from the Load Balancer.
