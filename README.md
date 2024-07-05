@@ -68,7 +68,7 @@ This is an explanation how to do migration and do the configuration of the envir
 - Configure alarms for critical metrics to monitoring performance from OKE and Database.
 
 ### Auto Scaling:
-- Configure auto-scaling for pods running in OKE and the database if necessary, configure read replicas to guarantee performance
+- Configure HPA for pods running in OKE. If it is necessary to improve database performance, we can configure read replicas.
 
 ## Step 6: Configure Backup Routines
 
