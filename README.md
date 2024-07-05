@@ -1,4 +1,4 @@
-# PROJECT TO OCI
+# OCI PROJECT - Application and Database
 
 ## Step 1: Assessment and Planning
 
