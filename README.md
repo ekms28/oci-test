@@ -1,5 +1,16 @@
 # OCI PROJECT - Application and Database
 
+## Additional Information
+
+This is an explanation of this environment, but if there is more budget to create the workloads, we can improve security with a Firewall, so all traffic passes through the firewall first and redirects to a private load balancer and some service like NGINX to distribute the packages. Also, if the application must be public with Load Balancer, we can use WAF to protect all calls to the URL, blocking by region, type of calls, robot traffic, etc.
+
+- Configure permissions according to the principle of least privilege.
+- Use guardrails to guarantee security for this environment, some of which are already mentioned above, because can be charged depending on the service.
+- To automate this environment, we should use Terraform/Ansible to improve agility and management of changes with pipelines using reusable workflows.
+
+
+## Details - How to...
+
 ## Step 1: Assessment and Planning
 
 ### Inventory of Current Resources:
@@ -40,7 +51,7 @@
 ## Step 4: Migrate the Workloads
 
 ### Database Migration:
-- Export the database from the current server.
+- Export the database from the current server to on Object Storage in OCI (If the dump file is very large, it will be necessary to compress and divide it into parts for better performance during upload).
 - Import the database into the Autonomous Database or MySQL/PostgreSQL Database Service or Instance with database services.
 
 ### Application Migration:
@@ -54,10 +65,10 @@
 
 ### Monitoring and Logging:
 - Set up OCI Monitoring and Logging services.
-- Configure alarms for critical metrics.
+- Configure alarms for critical metrics to monitoring performance from OKE and Database.
 
 ### Auto Scaling:
-- Configure auto-scaling for OKE and the database to handle variable loads.
+- Configure auto-scaling for pods running in OKE and the database if necessary, configure read replicas to guarantee performance
 
 ## Step 6: Configure Backup Routines
 
@@ -72,13 +83,3 @@
 - **DNS Cutover:** Update the DNS records to point to the new infrastructure.
 - **Final Testing:** Perform final testing to ensure everything is working as expected.
 - **Decommission Old Servers:** Once the new setup is confirmed to be stable, decommission the old servers.
-
-## Additional Information
-
-This is an explanation of this environment, but if there is more budget to create the workloads, we can improve security with a Firewall, so all traffic passes through the firewall first and redirects to a private load balancer and some service like NGINX to distribute the packages. Also, if the application must be public, we can use WAF to protect all calls to the URL, blocking by region, type of calls, robot traffic, etc.
-
-- Configure permissions according to the principle of least privilege.
-- Use guardrails to guarantee security for this environment, some of which are already mentioned above.
-- To automate this environment, we should use Terraform/Ansible to improve agility and management of changes.
-
-I already did the same project for AWS and OCI.
