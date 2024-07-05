@@ -2,7 +2,7 @@
 
 ## Additional Information
 
-This is an explanation of this environment, but if there is more budget to create the workloads, we can improve security with a Firewall, so all traffic passes through the firewall first and redirects to a private load balancer and some service like NGINX to distribute the packages. Also, if the application must be public with Load Balancer, we can use WAF to protect all calls to the URL, blocking by region, type of calls, robot traffic, etc.
+This is an explanation how to do migration and do the configuration of the environment, but if there is more budget to create the workloads, we can improve security with a Firewall, so all traffic passes through the firewall first and redirects to a private load balancer and some service like NGINX to distribute the packages. Also, if the application must be public with Load Balancer, we can use WAF to protect all calls to the URL, blocking by region, type of calls, robot traffic, etc.
 
 - Configure permissions according to the principle of least privilege.
 - Use guardrails to guarantee security for this environment, some of which are already mentioned above, because can be charged depending on the service.
