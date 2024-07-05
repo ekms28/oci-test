@@ -44,8 +44,7 @@
 - Import the database into the Autonomous Database or MySQL/PostgreSQL Database Service or Instance with database services.
 
 ### Application Migration:
-- Containerize the application if not already done.
-- Push the container image to Oracle Cloud Infrastructure Registry (OCIR).
+- Push the container image to Oracle Cloud Infrastructure Registry (OCIR), the image already exist, because already running in standalone docker installed in on-premise server.
 - Deploy the container to the OKE cluster.
 
 ## Step 5: Optimize and Test
