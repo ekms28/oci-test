@@ -82,4 +82,4 @@ This is an explanation of this environment, but if there is more budget to creat
 - Use guardrails to guarantee security for this environment, some of which are already mentioned above.
 - To automate this environment, we should use Terraform/Ansible to improve agility and management of changes.
 
-I have already done the same project for AWS and OCI.
+I already did the same project for AWS and OCI.
