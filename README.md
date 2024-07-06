@@ -73,7 +73,7 @@ To automate this environment, we should use Terraform/Ansible to improve agility
 ## Step 6: Configure Backup Routines
 
 ### Possibilities of Backup:
-- **Oracle Autonomous Database:** Automatically backs up your database to Object Storage, also perform manual backups if needed.
+- **Oracle Autonomous Database:** Automatically backup your database to Object Storage, also perform manual backups if needed.
 - **MySQL/PostgreSQL Database Service:** Can configure automatic backups and perform manual backups.
 - **Instance with Database Services:** Use scripts to run backup and send the files to an Object Storage and configure lifecycle to these objects.
 - **PS:** We can also configure backup to the boot volume if using an Instance.
