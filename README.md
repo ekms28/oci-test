@@ -9,7 +9,7 @@ Use guardrails to guarantee security for this environment, some of which are alr
 To automate this environment, we should use Terraform/Ansible to improve agility and management of changes with pipelines using reusable workflows.
 
 ### Very Important:
-I created this text based on OCI, but is not an impeditive to use for AWS, only adapt to the services names and some configurations are diferents during de process, but the idea is the same.
+I did this text based on OCI, but it does not have an impediment to use for AWS, only adapt to the services names and some configurations are different during de process, but the idea is the same.
 
 
 ## Details - How to...
