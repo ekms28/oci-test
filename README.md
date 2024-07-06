@@ -11,7 +11,7 @@ To automate this environment, we should use Terraform/Ansible to improve agility
 ### Very Important:
 I did this text based on OCI, but it does not have an impediment to use for AWS, only adapt to the services names and some configurations are different during de process, but the idea is the same.
 
-
+<br></br>
 
 ## Details - How to...
 
