@@ -65,10 +65,10 @@ To automate this environment, we should use Terraform/Ansible to improve agility
 
 ### Monitoring and Logging:
 - Set up OCI Monitoring and Logging services.
-- Configure alarms for critical metrics to monitoring performance from OKE and Database.
+- Configure alarms for critical metrics to monitoring performance from Load Balancer, NGINX (If exist) OKE, pods and Database.
 
 ### Auto Scaling:
-- Configure HPA for pods running in OKE. If it is necessary to improve database performance, we can configure read replicas.
+- Configure HPA to the pods running in OKE. This is necessary for the application pods scaling occurs according to the use of the configured resources.
 
 ## Step 6: Configure Backup Routines
 
