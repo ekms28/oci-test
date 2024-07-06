@@ -8,7 +8,7 @@ Configure permissions according to the principle of least privilege.
 Use guardrails to guarantee security for this environment, some of which are already mentioned above, because can be charged depending on the service.
 To automate this environment, we should use Terraform/Ansible to improve agility and management of changes with pipelines using reusable workflows.
 
-### Very Importante:
+### Very Important:
 I created this text based on OCI, but is not an impeditive to use for AWS, only adapt to the services names and some configurations are diferents during de process, but the idea is the same.
 
 
