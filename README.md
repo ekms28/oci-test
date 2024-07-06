@@ -15,7 +15,7 @@ To automate this environment, we should use Terraform/Ansible to improve agility
 
 ### Inventory of Current Resources:
 - **Database Server:** Identify the type of database and version.
-- **Application Server:** Identify the application stack and dependencies.
+- **Application Server:** Identify the application stack and dependencies, if this application can run with pods directly or should receive some changes before.
 - **Domain Configuration:** Verify the domain configuration and DNS settings.
 - **Performance Metrics:** Collect performance metrics from the current servers to understand the load and identify bottlenecks.
 
@@ -56,7 +56,7 @@ To automate this environment, we should use Terraform/Ansible to improve agility
 
 ### Application Migration:
 - Push the container image to Oracle Cloud Infrastructure Registry (OCIR), the image already exist, because already running in standalone docker installed in on-premise server.
-- Deploy the container to the OKE cluster.
+- Deploy the application to the OKE cluster.
 
 ## Step 5: Optimize and Test
 
