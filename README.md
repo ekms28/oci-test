@@ -4,9 +4,9 @@
 
 This is an explanation how to do migration and do the configuration of the environment, but if there is more budget to create the workloads, we can improve security with a Firewall, so all traffic passes through the firewall first and redirects to a private load balancer and some service like NGINX to distribute the packages in network level. Also, if the application must be public with Load Balancer, we can use WAF too to protect all calls to the URL, blocking by region, type of calls, robot traffic, etc in level of application.
 
-- Configure permissions according to the principle of least privilege.
-- Use guardrails to guarantee security for this environment, some of which are already mentioned above, because can be charged depending on the service.
-- To automate this environment, we should use Terraform/Ansible to improve agility and management of changes with pipelines using reusable workflows.
+Configure permissions according to the principle of least privilege.
+Use guardrails to guarantee security for this environment, some of which are already mentioned above, because can be charged depending on the service.
+To automate this environment, we should use Terraform/Ansible to improve agility and management of changes with pipelines using reusable workflows.
 
 
 ## Details - How to...
